@@ -1,0 +1,7 @@
+@startuml
+"another-service" -> "some-service": GET /api/bar/5
+note over "another-service" #yellow: Create xum\nStatus In Progress\nOwners: André Peric Tavares\n[[https://www.notion.so/e5c60c3962fe4e41aa49e62dab4f9828 Task]]
+"some-service" -> "another-service": {:status 200 :bar [:xum 5]}
+note over "some-service" #green: Another task example\nStatus Done\nOwners: \n[[https://www.notion.so/8278592477954e6189e980b2917be59b Task]]
+note over "some-service" #yellow: Create xum\nStatus In Progress\nOwners: André Peric Tavares\n[[https://www.notion.so/e5c60c3962fe4e41aa49e62dab4f9828 Task]]
+@enduml
